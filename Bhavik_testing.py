@@ -2,7 +2,6 @@ import nltk
 from nltk.corpus import stopwords
 from nltk import word_tokenize
 
-
 word1 = input()
 word = word_tokenize(word1)
 print(word)
