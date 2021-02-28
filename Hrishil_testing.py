@@ -1,5 +1,5 @@
-import numpy
+import pandas
 
-a = 'vikhroli,'
-a = input()
-print(a.isalpha())
+df = pandas.read_csv('Data\Training.csv')
+
+print(df.head)
