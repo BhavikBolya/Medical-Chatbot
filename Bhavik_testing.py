@@ -17,12 +17,8 @@
 
 
 import pandas as pd
-import numpy as np
-
 df =  pd.read_csv('Data\Training.csv')
-
-l1 = ['prominent_veins_on_calf']
-
+l1 = ['extra_marital_contacts']
 for col in df.columns:
     for i in l1:
         if col==i:
