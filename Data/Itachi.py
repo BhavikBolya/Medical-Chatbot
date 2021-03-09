@@ -13,6 +13,14 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 training = pd.read_csv('Data\Training.csv')
 testing = pd.read_csv('Data\Testing.csv')
+
+
+y_train = training.iloc[:,-1]
+x_train = training.iloc[:,:-1]
+
+x_test = testing.iloc[:,:-1]
+y_test = testing.iloc[:,-1]
+
 cols = training.columns
 cols = cols[:-1]
 x = training[cols]
@@ -28,7 +36,7 @@ le.fit(y)
 y = le.transform(y)
 
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33)
+# x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33)
 testx = testing[cols]
 testy = testing['prognosis']
 testy = le.transform(testy)
@@ -38,7 +46,7 @@ clf1 = DecisionTreeClassifier()
 clf = clf1.fit(x_train, y_train)
 # print(clf.score(x_train,y_train))
 # print ("cross result========")
-scores = cross_val_score(clf, x_test, y_test, cv=3)
+scores = cross_val_score(clf, x_test, y_test)
 # print (scores)
 print(scores.mean())
 
