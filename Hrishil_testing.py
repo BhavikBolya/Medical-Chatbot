@@ -6,27 +6,27 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 
-# df1 = pd.read_csv('Data/Testing.csv')
-# df2 = pd.read_csv('Data/Testing.csv')
+df1 = pd.read_csv('Data/Testing.csv')
+df2 = pd.read_csv('Data/Testing.csv')
 
-df = pd.read_csv('Data/dataset.csv')
+# df = pd.read_csv('Data/dataset.csv')
 
-train_size = int(len(df)*0.70)
-test_size = len(df) - train_size
-train_data = df[:train_size]
-test_data = df[train_size:]
+# train_size = int(len(df)*0.70)
+# test_size = len(df) - train_size
+# train_data = df[:train_size]
+# test_data = df[train_size:]
 
-y_train = train_data.iloc[:, -1]
-X_train = train_data.iloc[:, :-1]
+# y_train = train_data.iloc[:, -1]
+# X_train = train_data.iloc[:, :-1]
 
-X_test = test_data.iloc[:, :-1]
-y_test = test_data.iloc[:, -1]
+# X_test = test_data.iloc[:, :-1]
+# y_test = test_data.iloc[:, -1]
 
-# y_train = df1.iloc[:,-1]
-# X_train = df1.iloc[:,:-1]
+y_train = df1.iloc[:,-1]
+X_train = df1.iloc[:,:-1]
 
-# X_test = df2.iloc[:,:-1]
-# y_test = df2.iloc[:,-1]
+X_test = df2.iloc[:,:-1]
+y_test = df2.iloc[:,-1]
 
 
 LR = LogisticRegression(random_state=0, solver='lbfgs',
