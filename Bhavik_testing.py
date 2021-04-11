@@ -16,14 +16,14 @@
 # print(len(clean))
 
 
-import pandas as pd
-df = pd.read_csv('Data\Training.csv')
-l1 = ['fever', 'cold', '']
-for col in df.columns:
-    for i in l1:
-        if col == i:
-            df = df.loc[df[col] == 1]
-print(df['prognosis'])
+# import pandas as pd
+# df = pd.read_csv('Data\Training.csv')
+# l1 = ['fever', 'cold', '']
+# for col in df.columns:
+#     for i in l1:
+#         if col == i:
+#             df = df.loc[df[col] == 1]
+# print(df['prognosis'])
 
 # Program to measure the similarity between
 # two sentences using cosine similarity.
@@ -63,3 +63,21 @@ print(df['prognosis'])
 # 		c+= l1[i]*l2[i]
 # cosine = c / float((sum(l1)*sum(l2))**0.5)
 # print("similarity: ", cosine)
+
+
+import pandas as pd
+import spacy
+
+nlp = spacy.load('en_core_web_md')
+
+def get_sentence_vectors(text, nlp):
+
+    # get tokens for each word in sentence
+    embedding = nlp(text).vector.tolist()
+
+    return embedding
+
+symptom_df = pd.read_csv('Data\Training.csv')
+
+symptom_df['embedding'] = symptom_df.apply(lambda row: get_sentence_vectors(row['prognosis'], nlp), axis = 1)
+print(symptom_df.embedding[0]==symptom_df.embedding[1])
