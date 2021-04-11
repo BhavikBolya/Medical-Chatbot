@@ -77,7 +77,29 @@ def get_sentence_vectors(text, nlp):
 
     return embedding
 
-symptom_df = pd.read_csv('Data\Training.csv')
+symptom_df = pd.read_csv('Symptoms.csv')
 
-symptom_df['embedding'] = symptom_df.apply(lambda row: get_sentence_vectors(row['prognosis'], nlp), axis = 1)
-print(symptom_df.embedding[0]==symptom_df.embedding[1])
+symptom_df['embedding'] = symptom_df.apply(lambda row: get_sentence_vectors(row['symptom_name'], nlp), axis = 1)
+print(symptom_df)
+
+
+
+
+
+# list of illness
+illnesses = list(symptom_df['symptom_name'])
+
+# list we will use to store our illness vectors
+symptom_vectors = []
+
+for illness in illnesses:
+    illness_symptoms = list(symptom_df.loc[symptom_df["symptom_name"]==illness, 'symptom_name'])
+    symptom_df["related_to_illness"] = 0
+    symptom_df.loc[symptom_df["symptom_name"].isin(illness_symptoms), "related_to_illness"] = 1
+    
+    
+    symptom_vectors.append(list(symptom_df["related_to_illness"]))
+    
+diagnosis_data = pd.DataFrame({"illness":illnesses,
+                              "illness_vector": symptom_vectors})
+print(diagnosis_data)
