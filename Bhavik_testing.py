@@ -65,41 +65,49 @@
 # print("similarity: ", cosine)
 
 
-import pandas as pd
-import spacy
+# import pandas as pd
+# import spacy
 
-nlp = spacy.load('en_core_web_md')
+# nlp = spacy.load('en_core_web_md')
 
-def get_sentence_vectors(text, nlp):
+# def get_sentence_vectors(text, nlp):
 
-    # get tokens for each word in sentence
-    embedding = nlp(text).vector.tolist()
+#     # get tokens for each word in sentence
+#     embedding = nlp(text).vector.tolist()
 
-    return embedding
+#     return embedding
 
-symptom_df = pd.read_csv('Symptoms.csv')
+# symptom_df = pd.read_csv('Symptoms.csv')
 
-symptom_df['embedding'] = symptom_df.apply(lambda row: get_sentence_vectors(row['symptom_name'], nlp), axis = 1)
-print(symptom_df)
-
-
+# symptom_df['embedding'] = symptom_df.apply(lambda row: get_sentence_vectors(row['symptom_name'], nlp), axis = 1)
+# print(symptom_df)
 
 
 
-# list of illness
-illnesses = list(symptom_df['symptom_name'])
+from typing import Any, Text, Dict, List
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+from diagnose import encode_symptom, create_illness_vector, get_diagnosis
 
-# list we will use to store our illness vectors
-symptom_vectors = []
 
-for illness in illnesses:
-    illness_symptoms = list(symptom_df.loc[symptom_df["symptom_name"]==illness, 'symptom_name'])
-    symptom_df["related_to_illness"] = 0
-    symptom_df.loc[symptom_df["symptom_name"].isin(illness_symptoms), "related_to_illness"] = 1
-    
-    
-    symptom_vectors.append(list(symptom_df["related_to_illness"]))
-    
-diagnosis_data = pd.DataFrame({"illness":illnesses,
-                              "illness_vector": symptom_vectors})
-print(diagnosis_data)
+class ActionDiagnoseSymptoms(Action):
+
+    def name(self) -> Text:
+        return "action_diagnose_symptoms"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        symptoms = tracker.get_slot("symptom")
+
+        # encode each symptom
+        encoded_symptoms = [encode_symptom(symptom) for symptom in symptoms]
+
+        # create a binary vector of symptoms to compare to each each documented illnedd
+        illness_vector = create_illness_vector(encoded_symptoms)
+
+        # perform diagnosis
+        diagnosis_string = get_diagnosis(illness_vector)
+
+        dispatcher.utter_message(text=diagnosis_string)
