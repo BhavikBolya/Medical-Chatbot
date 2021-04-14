@@ -19,3 +19,12 @@
 23:04:45,207 root INFO Flagged 0 potential symptom matches
 23:04:45,212 root INFO Flagged 1 potential symptom matches
 23:04:45,233 root INFO Diagnosing user with Rocky mountain spotted fever bacterial infection spread by ticks
+01:08:36,725 root INFO Encoding symptom blurry vision
+01:08:36,739 root INFO Flagged 2 potential symptom matches
+01:08:36,770 root INFO Unable to find a diagnosis, the closest match was Posterior vitreous detachment common eye abnormality at 0.4999999999999999
+01:09:15,479 root INFO Encoding symptom poisoning
+01:09:15,492 root INFO Flagged 1 potential symptom matches
+01:09:15,512 root INFO Diagnosing user with Iron overdose
+01:09:41,454 root INFO Encoding symptom fever
+01:09:41,467 root INFO Flagged 1 potential symptom matches
+01:09:41,487 root INFO Diagnosing user with Rocky mountain spotted fever bacterial infection spread by ticks
