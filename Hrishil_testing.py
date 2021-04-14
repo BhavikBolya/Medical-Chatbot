@@ -52,3 +52,21 @@
 # print(two)
 # print(three)
 # print(four)
+
+
+import pandas as pd
+import spacy
+
+nlp = spacy.load('en_core_web_md')
+
+def get_sentence_vectors(text, nlp):
+
+    # get tokens for each word in sentence
+    embedding = nlp(text).vector.tolist()
+
+    return embedding
+
+symptom_df = pd.read_csv('Symptoms.csv')
+
+symptom_df['embedding'] = symptom_df.apply(lambda row: get_sentence_vectors(row['symptom_name'], nlp), axis = 1)
+print(symptom_df)
