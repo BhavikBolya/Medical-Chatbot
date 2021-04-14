@@ -1,0 +1,21 @@
+23:03:52,646 root INFO Encoding symptom fever
+23:03:52,651 root INFO Encoding symptom cold
+23:03:52,655 root INFO Encoding symptom headache
+23:03:52,672 root INFO Flagged 1 potential symptom matches
+23:03:52,676 root INFO Flagged 0 potential symptom matches
+23:03:52,681 root INFO Flagged 1 potential symptom matches
+23:03:52,706 root INFO Diagnosing user with Rocky mountain spotted fever bacterial infection spread by ticks
+23:04:25,983 root INFO Encoding symptom fever
+23:04:25,990 root INFO Encoding symptom cold
+23:04:25,995 root INFO Encoding symptom headache
+23:04:26,12 root INFO Flagged 1 potential symptom matches
+23:04:26,17 root INFO Flagged 0 potential symptom matches
+23:04:26,24 root INFO Flagged 1 potential symptom matches
+23:04:26,53 root INFO Diagnosing user with Rocky mountain spotted fever bacterial infection spread by ticks
+23:04:45,178 root INFO Encoding symptom fever
+23:04:45,183 root INFO Encoding symptom cold
+23:04:45,187 root INFO Encoding symptom headache
+23:04:45,201 root INFO Flagged 1 potential symptom matches
+23:04:45,207 root INFO Flagged 0 potential symptom matches
+23:04:45,212 root INFO Flagged 1 potential symptom matches
+23:04:45,233 root INFO Diagnosing user with Rocky mountain spotted fever bacterial infection spread by ticks

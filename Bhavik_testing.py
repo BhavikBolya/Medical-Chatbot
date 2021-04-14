@@ -90,24 +90,37 @@ from rasa_sdk.executor import CollectingDispatcher
 from diagnose import encode_symptom, create_illness_vector, get_diagnosis
 
 
-class ActionDiagnoseSymptoms(Action):
+# class ActionDiagnoseSymptoms(Action):
 
-    def name(self) -> Text:
-        return "action_diagnose_symptoms"
+#     def name(self) -> Text:
+#         return "action_diagnose_symptoms"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        symptoms = tracker.get_slot("symptom")
+#         # symptoms = tracker.get_slot("symptom")
+#         symptoms = ['fever','cold','headache']
 
-        # encode each symptom
-        encoded_symptoms = [encode_symptom(symptom) for symptom in symptoms]
+#         # encode each symptom
+#         encoded_symptoms = [encode_symptom(symptom) for symptom in symptoms]
 
-        # create a binary vector of symptoms to compare to each each documented illnedd
-        illness_vector = create_illness_vector(encoded_symptoms)
+#         # create a binary vector of symptoms to compare to each each documented illnedd
+#         illness_vector = create_illness_vector(encoded_symptoms)
 
-        # perform diagnosis
-        diagnosis_string = get_diagnosis(illness_vector)
+#         # perform diagnosis
+#         diagnosis_string = get_diagnosis(illness_vector)
 
-        dispatcher.utter_message(text=diagnosis_string)
+#         dispatcher.utter_message(text=diagnosis_string)
+
+
+
+symptoms = ['fever','cold','headache']
+# encode each symptom
+encoded_symptoms = [encode_symptom(symptom) for symptom in symptoms]
+# create a binary vector of symptoms to compare to each each documented illnedd
+illness_vector = create_illness_vector(encoded_symptoms)
+# perform diagnosis
+diagnosis_string = get_diagnosis(illness_vector)
+
+print(diagnosis_string)
