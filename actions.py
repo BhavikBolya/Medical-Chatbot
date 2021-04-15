@@ -1,6 +1,6 @@
 from typing import Any, Text, Dict, List
-from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.executor import CollectingDispatcher
 from diagnose import encode_symptom, create_illness_vector, get_diagnosis
 
 
@@ -12,13 +12,14 @@ class ActionDiagnoseSymptoms(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+        symptom = 'hair loss'
         symptoms = tracker.get_slot("symptom")
         
 
         # encode each symptom
         encoded_symptoms = [encode_symptom(symptom) for symptom in symptoms]
-
+        encoded_symptoms = [encode_symptom(symptom)]
+        print(encoded_symptoms)
         # create a binary vector of symptoms to compare to each each documented illnedd
         illness_vector = create_illness_vector(encoded_symptoms)
 
@@ -27,4 +28,6 @@ class ActionDiagnoseSymptoms(Action):
         diagnosis_string = get_diagnosis(illness_vector)
 
         dispatcher.utter_message(text=diagnosis_string)
+
+        return []
 

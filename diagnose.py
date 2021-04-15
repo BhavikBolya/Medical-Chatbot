@@ -5,8 +5,8 @@ import spacy
 from sklearn.metrics.pairwise import cosine_similarity
 
 nlp = spacy.load('en_core_web_md')
-diagnosis_df = pd.read_pickle("diagnosis_data.pkl")
-symptoms_df = pd.read_pickle("symptoms.pkl")
+diagnosis_df = pd.read_csv("Illness.csv")
+symptoms_df = pd.read_csv("Symptoms.csv")
 
 # logging config
 for handler in logging.root.handlers[:]:

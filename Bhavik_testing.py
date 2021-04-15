@@ -85,8 +85,8 @@
 
 
 from typing import Any, Text, Dict, List
-from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
+# from rasa_sdk import Action, Tracker
+# from rasa_sdk.executor import CollectingDispatcher
 from diagnose import encode_symptom, create_illness_vector, get_diagnosis
 
 
@@ -115,7 +115,7 @@ from diagnose import encode_symptom, create_illness_vector, get_diagnosis
 
 
 
-symptoms = ['fever','cold','headache']
+symptoms = ['itching','skin rash','nodal skin eruptions','dischromic patches']
 # encode each symptom
 encoded_symptoms = [encode_symptom(symptom) for symptom in symptoms]
 # create a binary vector of symptoms to compare to each each documented illnedd

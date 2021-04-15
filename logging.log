@@ -28,3 +28,77 @@
 01:09:41,454 root INFO Encoding symptom fever
 01:09:41,467 root INFO Flagged 1 potential symptom matches
 01:09:41,487 root INFO Diagnosing user with Rocky mountain spotted fever bacterial infection spread by ticks
+11:49:42,534 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+11:49:42,549 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+11:49:42,549 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+11:53:41,415 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+11:53:41,415 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+11:53:41,415 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+12:14:35,884 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+12:14:35,884 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+12:14:35,884 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+12:22:27,450 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+12:22:27,450 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+12:22:27,450 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+12:23:35,574 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:23:35,574 rasa_sdk.interfaces INFO Tried to access non existent slot 'symptom'.
+12:30:04,519 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:30:04,520 rasa_sdk.interfaces INFO Tried to access non existent slot 'symptom'.
+12:31:08,553 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:31:08,554 rasa_sdk.interfaces INFO Tried to access non existent slot 'symptom'.
+12:32:31,66 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:32:31,67 rasa_sdk.interfaces INFO Tried to access non existent slot 'symptom'.
+12:37:27,276 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:37:27,276 rasa_sdk.interfaces INFO Tried to access non existent slot 'symptom'.
+12:38:44,587 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:38:44,587 rasa_sdk.interfaces INFO Tried to access non existent slot 'symptom'.
+12:39:58,342 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+12:39:58,342 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+12:39:58,342 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+12:40:50,367 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:41:45,351 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+12:41:45,461 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+12:41:45,461 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+12:41:53,123 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:41:53,123 root INFO Encoding symptom blurry vision
+12:41:56,118 root INFO Flagged 2 potential symptom matches
+12:41:56,196 root INFO Unable to find a diagnosis, the closest match was Posterior vitreous detachment common eye abnormality at 0.4999999999999999
+12:41:56,196 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+12:44:12,677 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:44:12,677 root INFO Encoding symptom blurry vision
+12:44:12,693 root INFO Flagged 2 potential symptom matches
+12:44:12,708 root INFO Unable to find a diagnosis, the closest match was Posterior vitreous detachment common eye abnormality at 0.4999999999999999
+12:44:12,708 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+12:44:56,517 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:44:56,517 root INFO Encoding symptom blurry vision
+12:44:56,532 root INFO Flagged 2 potential symptom matches
+12:44:56,548 root INFO Unable to find a diagnosis, the closest match was Posterior vitreous detachment common eye abnormality at 0.4999999999999999
+12:44:56,548 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+12:46:58,297 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+12:46:58,297 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+12:46:58,297 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+12:47:14,316 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+12:47:14,316 root INFO Encoding symptom hair loss
+12:47:14,378 root INFO Flagged 0 potential symptom matches
+12:47:14,409 root INFO Unable to find a diagnosis, the closest match was Cholecystitis inflammation of the gallbladder at 0.0
+12:47:14,409 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+21:59:23,568 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+21:59:23,616 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+21:59:23,618 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+22:10:16,32 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+22:10:16,33 root INFO Encoding symptom hair loss
+22:10:19,465 root INFO Flagged 0 potential symptom matches
+22:10:19,642 root INFO Unable to find a diagnosis, the closest match was Cholecystitis inflammation of the gallbladder at 0.0
+22:10:19,644 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+22:13:51,500 root INFO Encoding symptom hair loss
+22:34:56,717 root INFO Encoding symptom hair loss
+22:34:57,178 root INFO Flagged 0 potential symptom matches
+22:34:57,284 root INFO Unable to find a diagnosis, the closest match was Cholecystitis inflammation of the gallbladder at 0.0
+22:49:58,130 root INFO Encoding symptom itching
+22:49:58,135 root INFO Encoding symptom skin rash
+22:49:58,139 root INFO Encoding symptom nodal skin eruptions
+22:49:58,145 root INFO Encoding symptom dischromic patches
+22:50:48,208 root INFO Encoding symptom itching
+22:50:48,214 root INFO Encoding symptom skin rash
+22:50:48,219 root INFO Encoding symptom nodal skin eruptions
+22:50:48,224 root INFO Encoding symptom dischromic patches
