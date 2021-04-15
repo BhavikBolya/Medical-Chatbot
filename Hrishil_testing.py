@@ -14,7 +14,7 @@ def get_sentence_vectors(text, nlp):
 
 symptom_df = pd.read_csv('Symptoms.csv')
 
-symptom_df['symtom_vector'] = symptom_df.apply(
+symptom_df['symptom_vector'] = symptom_df.apply(
     lambda row: get_sentence_vectors(row['symptom'], nlp), axis=1)
 
-symptom_df.to_csv("Symptoms.csv")
+symptom_df.to_pickle('symptoms.pkl')

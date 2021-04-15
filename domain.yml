@@ -8,10 +8,10 @@ intents:
   - describe_symptoms
 
 entities:
-  - symptom
+  - Symptom
 
 slots:
-  symptom:
+  Symptom:
     type: list
 
 actions:
