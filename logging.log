@@ -119,3 +119,49 @@
 23:34:29,869 root INFO Flagged 1 potential symptom matches
 23:34:29,872 root INFO Flagged 1 potential symptom matches
 23:34:29,981 root INFO Diagnosing user with Fungal infection
+02:37:07,251 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+02:37:07,268 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+02:37:07,269 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+02:52:48,151 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+02:52:48,151 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+02:52:48,151 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+02:55:40,308 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+02:55:40,309 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+02:55:40,309 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+23:42:38,175 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+23:42:38,349 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+23:42:38,350 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+23:48:05,3 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+23:48:05,3 rasa_sdk.interfaces INFO Tried to access non existent slot 'Symptom'.
+23:54:50,647 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+23:54:50,647 rasa_sdk.interfaces INFO Tried to access non existent slot 'Symptom'.
+23:59:41,667 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+23:59:41,668 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+23:59:41,668 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+00:01:02,706 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+00:01:02,706 root INFO Encoding symptom itching
+00:01:06,980 root INFO Flagged 1 potential symptom matches
+00:01:07,88 root INFO Unable to find a diagnosis, the closest match was Fungal infection at 0.5
+00:01:07,88 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+00:10:35,409 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+00:10:35,566 root INFO Encoding symptom itching
+00:10:35,578 root INFO Encoding symptom skin rash
+00:10:35,818 root INFO Encoding symptom nodal skin eruptions
+00:10:35,836 root INFO Encoding symptom dischromic patches
+00:10:36,455 root INFO Flagged 1 potential symptom matches
+00:10:36,459 root INFO Flagged 1 potential symptom matches
+00:10:36,463 root INFO Flagged 1 potential symptom matches
+00:10:36,468 root INFO Flagged 1 potential symptom matches
+00:10:36,471 root INFO Diagnosing user with Fungal infection
+00:10:36,472 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+00:12:48,714 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+00:12:48,715 root INFO Encoding symptom itching
+00:12:48,745 root INFO Encoding symptom skin rash
+00:12:48,804 root INFO Encoding symptom skin eruptions
+00:12:48,950 root INFO Encoding symptom patch
+00:12:50,94 root INFO Flagged 1 potential symptom matches
+00:12:50,97 root INFO Flagged 1 potential symptom matches
+00:12:50,101 root INFO Flagged 1 potential symptom matches
+00:12:50,105 root INFO Flagged 0 potential symptom matches
+00:12:50,107 root INFO Diagnosing user with Fungal infection
+00:12:50,107 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'

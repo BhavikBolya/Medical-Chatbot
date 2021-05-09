@@ -4,7 +4,12 @@ import numpy as np
 import spacy
 from sklearn.metrics.pairwise import cosine_similarity
 
+# import pickle5 as pickle
+# pb = pickle.PickleBuffer(b"foo")
+# data = pickle.dumps(pb, protocol=5)
+# assert pickle.loads(data) == b"foo"
 nlp = spacy.load('en_core_web_md')
+
 diagnosis_df = pd.read_pickle("Illness.pkl")
 symptoms_df = pd.read_pickle("symptoms.pkl")
 

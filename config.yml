@@ -4,7 +4,7 @@ language: "en"
 
 pipeline:
   - name: ConveRTTokenizer
-  - name: ConveRTFeaturizer
+  # - name: ConveRTFeaturizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
