@@ -165,3 +165,104 @@
 00:12:50,105 root INFO Flagged 0 potential symptom matches
 00:12:50,107 root INFO Diagnosing user with Fungal infection
 00:12:50,107 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:04:36,700 rasa_sdk.executor INFO Registered function for 'action_diagnose_symptoms'.
+19:04:37,170 rasa_sdk.endpoint INFO Action endpoint is up and running on http://localhost:5055
+19:04:37,170 rasa_sdk.utils DEBUG Using the default number of Sanic workers (1).
+19:19:56,898 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:19:56,932 root INFO Encoding symptom itching
+19:19:59,90 root INFO Encoding symptom skin rash
+19:19:59,164 root INFO Encoding symptom nodal skin eruptions
+19:19:59,222 root INFO Encoding symptom dischromic patches
+19:20:06,349 root INFO Flagged 1 potential symptom matches
+19:20:06,356 root INFO Flagged 1 potential symptom matches
+19:20:06,363 root INFO Flagged 1 potential symptom matches
+19:20:06,369 root INFO Flagged 1 potential symptom matches
+19:20:06,418 root INFO Diagnosing user with Fungal infection
+19:20:06,419 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:23:40,603 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:23:40,603 root INFO Encoding symptom itching
+19:23:40,634 root INFO Encoding symptom skin rash
+19:23:40,645 root INFO Encoding symptom nodal skin eruptions
+19:23:40,657 root INFO Encoding symptom dischromic patches
+19:23:40,862 root INFO Flagged 1 potential symptom matches
+19:23:40,867 root INFO Flagged 1 potential symptom matches
+19:23:40,871 root INFO Flagged 1 potential symptom matches
+19:23:40,874 root INFO Flagged 1 potential symptom matches
+19:23:40,876 root INFO Diagnosing user with Fungal infection
+19:23:40,876 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:24:44,759 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:24:44,760 root INFO Encoding symptom itching
+19:24:44,777 root INFO Encoding symptom skin rash
+19:24:44,789 root INFO Encoding symptom nodal skin eruptions
+19:24:45,26 root INFO Encoding symptom patches
+19:24:45,41 root INFO Flagged 1 potential symptom matches
+19:24:45,45 root INFO Flagged 1 potential symptom matches
+19:24:45,49 root INFO Flagged 1 potential symptom matches
+19:24:45,53 root INFO Flagged 1 potential symptom matches
+19:24:45,56 root INFO Diagnosing user with Fungal infection
+19:24:45,57 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:25:51,519 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:25:51,519 root INFO Encoding symptom itching
+19:25:51,532 root INFO Encoding symptom nodal skin eruptions
+19:25:51,546 root INFO Flagged 1 potential symptom matches
+19:25:51,552 root INFO Flagged 1 potential symptom matches
+19:25:51,554 root INFO Diagnosing user with Fungal infection
+19:25:51,554 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:27:16,99 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:27:16,100 root INFO Encoding symptom itching
+19:27:16,115 root INFO Encoding symptom skin rash,eruptions
+19:27:16,284 root INFO Encoding symptom patches
+19:27:16,305 root INFO Flagged 1 potential symptom matches
+19:27:16,310 root INFO Flagged 1 potential symptom matches
+19:27:16,314 root INFO Flagged 1 potential symptom matches
+19:27:16,317 root INFO Diagnosing user with Fungal infection
+19:27:16,317 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:27:51,253 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:27:51,253 root INFO Encoding symptom itching
+19:27:51,270 root INFO Encoding symptom skin rash
+19:27:51,282 root INFO Encoding symptom eruptions
+19:27:51,292 root INFO Encoding symptom patches
+19:27:51,307 root INFO Flagged 1 potential symptom matches
+19:27:51,313 root INFO Flagged 1 potential symptom matches
+19:27:51,317 root INFO Flagged 0 potential symptom matches
+19:27:51,322 root INFO Flagged 1 potential symptom matches
+19:27:51,324 root INFO Diagnosing user with Fungal infection
+19:27:51,324 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:28:45,268 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:28:45,268 root INFO Encoding symptom itching
+19:28:45,286 root INFO Encoding symptom skin
+19:28:45,298 root INFO Encoding symptom eruptions
+19:28:45,308 root INFO Encoding symptom path
+19:28:45,326 root INFO Flagged 1 potential symptom matches
+19:28:45,330 root INFO Flagged 3 potential symptom matches
+19:28:45,334 root INFO Flagged 0 potential symptom matches
+19:28:45,337 root INFO Flagged 0 potential symptom matches
+19:28:45,339 root INFO Diagnosing user with Fungal infection
+19:28:45,340 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:31:02,716 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:31:02,716 root INFO Encoding symptom itching
+19:31:02,729 root INFO Encoding symptom rash
+19:31:02,740 root INFO Encoding symptom eruptions
+19:31:02,754 root INFO Encoding symptom patches
+19:31:02,772 root INFO Flagged 1 potential symptom matches
+19:31:02,777 root INFO Flagged 1 potential symptom matches
+19:31:02,784 root INFO Flagged 0 potential symptom matches
+19:31:02,790 root INFO Flagged 1 potential symptom matches
+19:31:02,793 root INFO Diagnosing user with Fungal infection
+19:31:02,793 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:31:39,561 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:31:39,561 root INFO Encoding symptom itching
+19:31:39,579 root INFO Flagged 1 potential symptom matches
+19:31:39,952 root INFO Unable to find a diagnosis, the closest match was Fungal infection at 0.5
+19:31:39,953 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
+19:50:47,723 rasa_sdk.executor DEBUG Received request to run 'action_diagnose_symptoms'
+19:50:47,725 root INFO Encoding symptom skin rash
+19:50:47,778 root INFO Encoding symptom itching
+19:50:47,789 root INFO Encoding symptom nodal skin eruptions
+19:50:47,801 root INFO Encoding symptom dischromic patches
+19:50:47,825 root INFO Flagged 1 potential symptom matches
+19:50:47,829 root INFO Flagged 1 potential symptom matches
+19:50:47,832 root INFO Flagged 1 potential symptom matches
+19:50:47,836 root INFO Flagged 1 potential symptom matches
+19:50:47,840 root INFO Diagnosing user with Fungal infection
+19:50:47,841 rasa_sdk.executor DEBUG Finished running 'action_diagnose_symptoms'
